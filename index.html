@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+
+    <title>Erick Alves</title>
+    <meta name="description" content=" descricao google">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content=" ERICK ALVES - Book Design, Comics, ilustration">
+    <meta name="og:description" content=" descricao google">
+    <meta property="og:url" content="http://erickalves.com">
+    <meta property="og:image" content="img">
+    <link rel="stylesheet" href="./css/novostyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/grid.css">
+</head>
+
+<body>
+
+
+    <header id="header">
+        <section class="cabecalho">
+            <div class="cabecalho-logo"><a id="logo" href="#index"><img src="./imgs/assinatura-branca.png" alt=""
+                        class="logo logo-cabecalho"></a></div>
+        </section>
+        <nav id="nav" class="nav fundo">
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                aria-expanded="false" class="button">
+                <span id="hamburger"></span>
+            </button>
+            <ul id="menu" role="menu">
+                <li><a href="#index" class="menu_ativo">home</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="book.html">book design</a></li>
+                <li><a href="ilustration.html">illustration</a></li>
+                <li><a href="comics.html">Comics</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="banner">
+            <div id="slider">
+                <div class="container"><img src="./imgs/repainting-2015.png" alt="" class="img-container selected">
+                    <img src="./imgs/imagens livros/014.png" class="img-container">
+                    <img src="./imgs/imagens livros/029.png" class="img-container">
+                    <img src="./imgs/imagens livros/060.png" class="img-container">
+                    <img src="./imgs/imagens livros/065.png" class="img-container">
+                    <img src="./imgs/imagens livros/058.png" class="img-container">
+                    <img src="./imgs/imagens livros/036.png" class="img-container">
+                </div>
+            </div>
+        </section>
+
+        <section class="container servicos">
+            <h1 class="titulo titulo3 t">
+                portfolio
+            </h1>
+
+            <ul id="servico">
+                <li class="efeito-servico"><a href="/ilustration.html"><img src="./imgs/Instagram post - 1.png" alt=""
+                            class=" img-servico"></a></li>
+                <li class="efeito-servico"><a href="/book.html"><img src="./imgs/Instagram post - 2.png" alt=""
+                            class=" img-servico"></a></li>
+                <li class="efeito-servico"><a href="comics.html"><img src="./imgs/Instagram post - 3.png" alt=""
+                            class="img-servico"></a></li>
+            </ul>
+        </section>
+        <section class="sobre " id="about">
+            <div class=" container sobre-organizacao " id="sobre">
+                <img src="./imgs/foto perfil.jpg" alt=" foto Erick" class=" sobre-img ">
+                <div class="bloco-texto">
+                    <h1 class="titulo">
+                        ERICK ALVES
+                    </h1>
+                    <p class="paragrafo">Erick Alves has been an illustrator and book designer for over five years.
+                        Keeping some focus on fantasy, sci-fi and horror, he also goes into children's books.
+                        In addition to working with publishers such as Skript, Pendragon, Vitrola, Sem Tinta, Skull,
+                        Flyve, Círculos Soturnos and others, he also works with independent authors.</p>
+                </div>
+            </div>
+        </section>
+        <section class=" container contato contat-form" id="contact">
+            <div class="contato-organizer">
+                <div class="cont">
+                    <ul class="link" id="link">
+                        <li><a href="https://www.amazon.com.br/Erick-Alves-Pereira/e/B08G547CVS/" target="_blank"><img
+                                    src="./imgs/icons/icons8-amazon-50.png" alt="amazon"
+                                    class="icons efeito-servico"></a></li>
+                        <li><a href="https://api.whatsapp.com/send?phone=55359220-1208&text=Olá, gostaria de um orçamento😄"
+                                target="_blank"><img src="./imgs/icons/icons8-whatsapp-50 (1).png" alt="whatsapp"
+                                    class="icons efeito-servico"></a></li>
+                        <li><a href="https://www.facebook.com/art.erickalves" target="_blank"><img
+                                    src="./imgs/icons/icons8-facebook-50.png" alt="facebook"
+                                    class="icons efeito-servico"></a>
+                        </li>
+                        <li><a href="https://www.instagram.com/erickalvesbr/ " target="_blank"><img
+                                    src="./imgs/icons/icons8-instagram-50.png" alt="instagram"
+                                    class="icons efeito-servico"></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCa6nxuCeXBw8XjM0pi1HU9g" target="_blank"><img
+                                    src="./imgs/icons/icons8-youtube-ao-quadrado-50.png" alt="youtube"
+                                    class="icons efeito-servico"></a></li>
+                        </li>
+                    </ul>
+                    <div class="">
+                        <h1 class="titulo titulo2"> Contact</h1>
+                        <p class="paragrafo paragrafo2">If you have a project in mind or would like to make an enquiry
+                            simply select one of the following options..</p>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="subtitulo  efeito-servico">
+                        Look who's here 😅
+                    </h2>
+                    <section class="form-">
+                        <form action="enviar.php" method="post" name="form" class="formphp form">
+                            <label for="nome" class="paragrafo1">Name:</label>
+                            <input id="nome" name="nome" type="text" class="area-texto">
+                            <label for="email" class="paragrafo1">E-mail:</label>
+                            <input id="email" name="email" type="text" class="area-texto">
+                            <label for="telefone" class="paragrafo1">Phone:</label>
+                            <input id="telefone" name="telefone" type="text" class="area-texto">
+                            <label class="nao-aparece">Se você não é um robô, deixe em branco.</label>
+                            <input type="text" class="nao-aparece" name="leaveblank">
+                            <label class="nao-aparece">Se você não é um robô, não mude este campo.</label>
+                            <input type="text" class="nao-aparece" name="dontchange" value="http://">
+                            <label for="mensagem" class="paragrafo1">Message:</label>
+                            <textarea name="message" rows="5" cols="33" class="area-texto" id="mensagem"></textarea>
+                            <button id="enviar" name="enviar" type="submit" class="btn efeito-servico">Submit</button>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <section>
+            </script><iframe src="//lightwidget.com/widgets/976b78ad60485ffd8a9937d12d6aa1ed.html" scrolling="no"
+                allowtransparency="true" class="lightwidget-widget"
+                style="width:100%;border:0;overflow:hidden;"></iframe>
+        </section>
+    </main>
+    
+    <a id="link-topo"href="#" class="efeito-servico"><img src="./imgs/seta-up.png"></a>
+
+
+
+    <section>
+        <footer class="rodape">
+            <p>The use without authorization of any author's art is prohibited.</p>
+            <p> Developed by Nayara Nunes.💛</p>
+            <p>contact-me: <a href="" class="email">nayaranunes.dev@gmail.com</a></p>
+        </footer>
+    </section>-->
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erick Alves</title>
+
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            background: #121212;
+
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            display: grid;
+            grid-auto-flow: dense;
+            grid-template: 
+             "1fr 1fr 1fr 1fr "35vh 
+            "1fr 1fr 1fr 1fr " 35vh
+             "1fr 1fr 1fr 1fr "35vh
+             "1fr 1fr 1fr 1fr "35vh
+             "1fr 1fr 1fr 1fr "35vh
+             "1fr 1fr 1fr 1fr "35vh
+             "1fr 1fr 1fr 1fr "35vh
+             "1fr 1fr 1fr 1fr "35vh
+             "1fr 1fr 1fr 1fr "35vh
+             "1fr 1fr 1fr 1fr "35vh
+             "1fr 1fr 1fr 1fr "35vh 
+             "1fr 1fr 1fr 1fr "35vh
+              "1fr 1fr 1fr 1fr "35vh 
+              "1fr 1fr 1fr 1fr "35vh
+               "1fr 1fr 1fr 1fr "35vh
+             "1fr 1fr 1fr 1fr "35vh;
+             
+            grid-gap: 20px;
+
+        }
+
+        .container .box img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .container .box {
+     
+            position: relative;
+           
+        }
+        .container .box.a{
+            grid-column:span 2 ;
+        }
+     
+
+
+
+        @media (max-width:990px) {
+            .container {
+                width: 100%;
+                display: grid;
+                grid-auto-flow: dense;
+                grid-template: "1fr 1fr 1fr "250px 
+                "1fr 1fr 1fr "250px 
+                "1fr 1fr 1fr"250px 
+                "1fr 1fr 1fr "250px 
+                "1fr 1fr 1fr"250px;
+                grid-gap: 10px;
+
+            }
+        }
+
+        @media (max-width:768px) {
+            .container {
+                width: 100%;
+                display: grid;
+                grid-auto-flow: dense;
+                grid-template: "1fr 1fr  "250px "1fr 1fr "250px "1fr 1fr "250px "1fr 1fr "250px "1fr 1fr "250px "1fr 1fr "250px "1fr 1fr"250px;
+                grid-gap: 5px;
+
+            }
+        }
+       /* tentando aplicar modal */
+       .row{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+       .small_img_book {
+            height: 100%;
+            cursor: pointer;
+            transition: all linear 0.4s;
+            filter: grayscale(0%);
+
+        }
+
+        .small_img_book:hover {
+        
+            transform: scale(1.8);
+            z-index: 1;
+            margin: 50px;
+        }
+      
+
+
+
+
+        /*galeria movel
+        section {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            border: 2px solid #0000;
+
+        }
+
+        section .slide {
+            position: relative;
+
+            height: 100%;
+            flex: 1;
+            border-right: 2px solid #000;
+            overflow: hidden;
+            transition: 0.5s ease-in-out;
+        }
+
+        section .slide:last-child {
+            border-right: none;
+        }
+
+        section .slide:hover {
+            flex-grow: 5;
+
+        }
+
+        section .slide:nth-child(1) {
+            background-image: url(./imgs/p7.png);
+            background-size: cover;
+            background-position: center center;
+        }
+
+        section .slide:nth-child(2) {
+            background-image: url(./imgs/imagens\ livros/);
+            background-size: cover;
+            background-position: center center;
+        }
+
+        section .slide:nth-child(3) {
+            background-image: url(./imgs/p-8.jpg);
+            background-size: cover;
+            background-position: center center;
+        }
+
+        section .slide:nth-child(4) {
+            background-image: url(./imgs/p-5.jpg);
+            background-size: cover;
+            background-position: center center;
+        }
+
+        section .slide:nth-child(5) {
+            background-image: url(./imgs/p2.png);
+            background-size: cover;
+            background-position: center center;
+        }
+
+        section .slide:nth-child(6) {
+            background-image: url(./imgs/HQ.png);
+            background-size: cover;
+            background-position: center center;
+        }
+
+
+        section .slide .content {
+            position: absolute;
+            bottom: 0;
+            margin: 40px;
+            padding: 30px;
+            background: #000;
+            color: #ccc;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0s;
+            transform: rotateY(100px);
+        }
+
+        section .slide:hover .content {
+            visibility: visible;
+            opacity: 1;
+            transition: 0.5s;
+            transition-delay: 0.5s;
+            transform: rotateY(0x);
+        }
+ */
+ 
+    </style>
+
+</head>
+
+
+<body>
+
+    <div>
+        <div class="container">
+            <div class="box b small_img_book"><img src="./imgs/imagens livros/008.png" alt=""></div>
+
+             <div class="box a small_img_book"><img src="./imgs/imagens livros/005.png" alt=""></div>
+      
+            <div class="box c small_img_book"><img src="./imgs/imagens livros/007.png" alt=""></div>
+
+           
+            <div class="box fsmall_img_book"><img src="./imgs/imagens livros/012.png" alt=""></div>
+            <div class="box a small_img_book"><img src="./imgs/imagens livros/006.png" alt=""></div>
+            <div class="box g small_img_book"><img src="./imgs/imagens livros/011.png" alt=""></div>
+
+            
+            <div class="box  small_img_book"><img src="./imgs/imagens livros/022.png" alt=""></div>
+            <div class="box a small_img_book"><img src="./imgs/imagens livros/021.png" alt=""></div>
+            <div class="box  small_img_book"><img src="./imgs/imagens livros/028.png" alt=""></div>
+
+            <div class="box a small_img_book"><img src="./imgs/imagens livros/014.png" alt=""></div>
+            <div class="box a small_img_book"><img src="./imgs/imagens livros/090.png" alt=""></div>
+
+
+            <div class="box small_img_book"><img src="./imgs/imagens livros/040.png" alt=""></div>
+            <div class="box a small_img_book"><img src="./imgs/imagens livros/053.png" alt=""></div>
+            <div class="box  small_img_book"><img src="./imgs/imagens livros/054.jpg" alt=""></div>
+
+            
+            <div class="box a small_img"><img src="./imgs/imagens livros/065.png" alt=""></div>
+            <div class="box a  small_img_book"><img src="./imgs/imagens livros/088.png" alt=""></div>
+            
+
+            <div class="box  small_img_book"><img src="./imgs/imagens livros/050.png" alt=""></div>
+            <div class="box a  small_img_book"><img src="./imgs/imagens livros/092.png" alt=""></div> 
+            <div class="box  small_img_book"><img src="./imgs/imagens livros/051.png" alt=""></div>
+          
+
+
+        </div>
+    </div>
+
+    <!--
+
+    <section>
+        <div class="slide">
+            <div class="content">
+                <h2>Slide One</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quo mollitia veniam quas,
+                    voluptatibus
+                    consequuntur dolores nemo animi? Earum nisi cum numquam voluptates delectus soluta sequi neque animi
+                    commodi accusamus.</p>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="content">
+                <h2>Slide dois</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quo mollitia veniam quas,
+                    voluptatibus
+                    consequuntur dolores nemo animi? Earum nisi cum numquam voluptates delectus soluta sequi neque animi
+                    commodi accusamus.</p>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="content">
+                <h2>Slide three</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quo mollitia veniam quas,
+                    voluptatibus
+                    consequuntur dolores nemo animi? Earum nisi cum numquam voluptates delectus soluta sequi neque animi
+                    commodi accusamus.</p>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="content">
+                <h2>Slide four</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quo mollitia veniam quas,
+                    voluptatibus
+                    consequuntur dolores nemo animi? Earum nisi cum numquam voluptates delectus soluta sequi neque animi
+                    commodi accusamus.</p>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="content">
+                <h2>Slide five</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quo mollitia veniam quas,
+                    voluptatibus
+                    consequuntur dolores nemo animi? Earum nisi cum numquam voluptates delectus soluta sequi neque animi
+                    commodi accusamus.</p>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="content">
+                <h2>Slide One</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quo mollitia veniam quas,
+                    voluptatibus
+                    consequuntur dolores nemo animi? Earum nisi cum numquam voluptates delectus soluta sequi neque animi
+                    commodi accusamus.</p>
+            </div>
+        </div>
+    </section>
+-->
+    <script src="./js/script2.js">
+        // GALERIA
+        let imagens = document.querySelectorAll('.small_img');
+        let modal = document.querySelector('.modal');
+        let modalImg = document.querySelector('#modal_img');
+        let btClose = document.querySelector('#bt_close');
+        let srcVal = "";
+
+        for (let i = 0; i < imagens.length; i++) {
+            imagens[i].addEventListener('click', function () {
+
+                srcVal = imagens[i].getAttribute('src');
+                modalImg.setAttribute('src', srcVal);
+                modal.classList.toggle('modal_active');
+            });
+
+        }
+        btClose.addEventListener('click', function () {
+            modal.classList.toggle('modal_active');
+        });
+
+    </script>
+
+</body>
+
+</html>

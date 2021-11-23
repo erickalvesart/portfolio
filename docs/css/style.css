@@ -254,80 +254,680 @@ a{text-decoration: none;}
   
 }
 
-/* GALERIAS */
+
+/*Book*/
 
 
-.card_img{
-  width: 300px;
-  height: 300px;
-  overflow: hidden;
-  margin: 20px;
+/* Menu - página books */
+
+
+.botton-book{
+  margin-left: 40px;
+  padding-top: 5px;
+  width: 200px;
+  height: 40px;
+  font-family:var(--fontDestaque);
+  font-size: 24px;
+  background-image: linear-gradient(to  right, #121212, #333333);
+  color: var(--cor04);
+  box-shadow:  2px 2px 2px rgba(0, 0, 0, 0.205);
+  border: 1px solid #333333;
+
+
+  text-align: center;
 }
-.card_img_comics{
-  width: 400px;
-  height: 500px;
-  overflow: hidden;
-  margin: 20px;
+
+.botton-book:hover{
+  background: var(--cor03);
+  color: var(--cor01);
+  transition: all ease-in-out .2s;
+  border: 4px solid var(--cor03);
 }
-.card_img_book{
-  width: 300px;
-  height: 400px;
-  overflow: hidden;
-  margin: 10px;
+
+
+
+
+.escolhe-book{
+  display: flex;
+  justify-content: center;
 }
-.card_img_ilustration{
-  width: 300px;
-  height: 400px;
-  overflow: hidden;
-  margin: 20px;
-  margin-bottom: 40px;
+
+
+
+
+/*mobile */
+@media only screen  and (max-width: 600px) {
+ 
+.titulo{
+    font-size: 1.8em;
+    text-align: center;
+    margin-top: 40px;
+
 }
-.card_img_il-2{
-margin-right: 60px;
-margin-bottom: 40px;
+.banner{
+    display: none;
+}
+#about{
+  display: none;
+}
+
+.servicos ul li{
+    margin-bottom: 20px;
+}
+#servico{
+  width: 70%;
+    margin: auto;
+    display: block;
+    
+}
+/* SOBRE */
+
+.paragrafo{
+    font-size: 1.2em;
+    margin: 0px;
+    width: 60%;
+    margin-right: 10px;
+}
+
+.paragrafo-2{
+  font-size: 1.2em;
+  color: var(--cor05);
+  font-family: var(--fontPadrao);
+  font-weight: 500;
+  text-align: justify;
+  width: 100%;
+  margin: 0px;
+}
+
+#sobre{
+    display: none;
+}
+
+.subtitulo{
+display: none;
+}
+
+#link{
+  margin: 0;
+  margin-right: 15px;
+  padding-left: 0;
+  width: 20px;
+}
+
+  #link{
+      display: inline;
+  }
+  .form{
+   display: none;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+#contat{
+  display: block;
+}
+
+.escolhe-book a{
+  font-size: 1.2em;
+}
+
+
+.sub-book{
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.titulo-book{
+  font-size: 2.2em;
+  margin: 40px 0;
+}
+.container_book .box {
+  grid-column: span 2;
+  grid-row: span 1;
+  position: relative;
+
+}
+
+
+
+
+
+}
+
+
+/* Tablet e Laptop*/
+@media screen  and (max-width: 1024px){
+  #logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      .logo{
+          width: 60px;
+      }      
+      #header {
+        box-sizing: border-box;
+        height: 70px;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-image: linear-gradient(to  right, #121212, #333333);
+      }    
+      #menu {
+        display: flex;
+        list-style: none;
+        gap: 0.5rem;
+      }  
+      #menu a {
+        display: block;
+        padding: 0.5rem;
+      }  
+      #btn-mobile {
+        display: none;
+      }
+        #menu {
+          display: block;
+          position: absolute;
+          width: 100%;
+          top: 70px;
+          right: 0px;
+          background-image: linear-gradient(to  right, #121212, #333333);
+          transition: 0.6s;
+          z-index: 1000;
+          height: 0px;
+          visibility: hidden;
+          overflow-y: hidden;
+        }
+        .nav.active #menu {
+          height: calc(100vh - 70px);
+          visibility: visible;
+          overflow-y: auto;
+        }
+        #menu a {
+          padding: 1rem 0;
+          margin: 0 1rem;
+          color: var(--cor05);
+          font-family: var(--fontDestaque);
+          text-align: center;
+          font-size: 2em;
+    
+        
+        }
+        #menu a:hover{
+            background-color: var(--cor04);
+            color: var(--cor02);
+        }
+        #btn-mobile {
+          display: flex;
+          padding: 0.5rem 1rem;
+          font-size: 1rem;
+          border: none;
+          background: none;
+          cursor: pointer;
+          gap: 0.5rem;
+        }
+        #hamburger {
+          border-top: 2px solid;
+          width: 20px;
+          color: var(--cor05);
+        }
+        #hamburger::after,
+        #hamburger::before {
+          content: '';
+          display: block;
+          width: 20px;
+          height: 2px;
+          background: currentColor;
+          margin-top: 5px;
+          transition: 0.3s;
+          position: relative;
+        }
+        .nav.active #hamburger {
+          border-top-color: transparent;
+        }
+        .nav.active #hamburger::before {
+          transform: rotate(135deg);
+        }
+        .nav.active #hamburger::after {
+          transform: rotate(-135deg);
+          top: -7px;
+        }
+
+        /* sobre*/
+.bloco-texto{
+    width: 100%;
+}
+#about{
+    background-image: url(../imgs/textura-fundo.png);
+    background-size: cover;
+    padding: 60px;
+    margin-bottom: 80px;
+}
+.sobre-img{
+    width: 50%;
+    border: 4px solid var(--cor04);
+
+}
+
+.sobre-organizacao{
+    display: flex;
+   
+}
+
+/* fontes*/
+.paragrafo{
+    font-size: 1em;
+    text-align: justify;
+    margin-left: 20px;
+    line-height: 1.5em;
+}
+.titulo{
+  font-size: 2.8em;
+}
+.titulo-page{margin-top: 40px;
+  font-size: 4em;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.t{
+    margin-top: 150px;
+}
+.titulo-book{
+  font-size: 2.5em;
+
+}
+.contato-organizer{
+    display: inline-block;
+}
+
+/*BANNER*/
+.banner{
+    margin-top: 0px;
+}
+
+/* portfolio*/
+.img-servico{
+width: 100%;
+ height: 100%;
+ border: 5px solid var(--cor02);
+}
+.servicos ul{
+    display: flex;
+    justify-content: center;
+   
+}
+.servicos ul li{
+    width: 100%;
+ margin-left: 20px;      
+}
+.servicos{
+    margin-bottom: 60px;
+}
+
+
+/* CONTATO*/ 
+.link {
+    display: inline;
+    margin: 20px;
+}
+
+.contato-organizer {
+    display: flex;
+}
+.form{
+padding: 10px;
+text-align: center;
+margin-bottom: 60px;
+margin-left: 40px;
+
+}
+
+.paragrafo2{
+    width: 200px;
+}
+.form .area-texto{
 width: 70%;
+padding: 5px;
+margin-bottom: 15px;
+}
+.form label{
+display: block;
+text-align: left;
+
 }
 
-.card_img_layout{ 
-  max-width: 400px;
-  height: 300px;
-  overflow: hidden;
-  margin: 20px;
+
+.container_book .box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
 }
 
-.card_img_layout2{
-  width: 600px;
-  height: 300px;
-  overflow: hidden;
-  margin: 20px;
+.container_book .box {
+  grid-row: span 2;
+  position: relative;
+  background-color: #ccc;
 }
-.small_img{
+/* galeria-book*/
+.container_book {
+  margin: auto;
+  width: 90%;
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template:
+   "1fr 1fr "250px 
+   "1fr 1fr "250px
+  "1fr 1fr " 250px 
+   "1fr 1fr "250px 
+   "1fr 1fr "250px 
+   "1fr 1fr "250px 
+   "1fr 1fr "250px 
+   "1fr 1fr "250px 
+   "1fr 1fr "250px 
+   "1fr 1fr "250px 
+   "1fr 1fr "250px 
+   "1fr 1fr "250px 
+   "1fr 1fr "250px 
+   "1fr 1fr "250px 
+   "1fr 1fr "250px 
+   "1fr 1fr "250px 
+   "1fr 1fr "250px
+   "1fr 1fr "250px 
+   "1fr 1fr "250px 
+   "1fr 1fr "250px
+   "1fr 1fr "250px 
+   "1fr 1fr "250px
+   "1fr 1fr "250px 
+   "1fr 1fr"250px;
+    grid-gap: 4px;
+
+}
+.small_img_book {
   height: 100%;
   cursor: pointer;
   transition: all linear 0.4s;
-}
-.small_img:hover{
-  filter: grayscale(100%);
-  transform: scale(1.1);
+  filter: grayscale(0%);
+
 }
 
-.row{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+.small_img_book:hover {
+
+  transform: scale(1.2);
+  z-index: 1;
+  
 }
 
-#modal_img{
-  width: 80vw;
-  transform: scale(0);
-  transition: all linear .3s;
+/*Layout book*/
+.container_layout {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template: 
+   "1fr 1fr "35vh 
+  "1fr 1fr " 35vh
+   "1fr 1fr  "35vh
+   "1fr 1fr "35vh
+   "1fr 1fr  "35vh
+   
+   "1fr 1fr "35vh
+   "1fr 1fr  "35vh
+   "1fr 1fr  "35vh
+   "1fr 1fr  "35vh
+   "1fr 1fr  "35vh
+   "1fr 1fr  "35vh
+   "1fr 1fr "35vh
+   
+   "1fr 1fr "35vh;
+  grid-gap: 5px;
+
 }
 
-.modal_active #modal_img{
-  transform: scale(0.5);
+.container_layout .box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
-/*Book*/
+.container_layout .box {
+  position: relative;
+}
+.container_layout .box.a{
+  grid-column:span 2 ;
+}
+.small_img_layout {
+  height: 100%;
+  cursor: pointer;
+  transition: all linear 0.4s;
+  filter: grayscale(0%);
+
+}
+
+.small_img_layout:hover {
+
+  transform: scale(1.2);
+  z-index: 1;
+  margin: 50px;
+}
+
+.container_layout1 {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template: 
+   "1fr  "35vh
+   "1fr  "35vh
+   "1fr  "35vh
+   "1fr  "35vh
+   "1fr  "35vh;
+  grid-gap: 10px;
+  
+  
+
+}
+
+.container_layout1 .box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.container_layout1 .box {
+  position: relative;
+}
+.container_layout1 .box.a{
+  grid-column:span 2 ;
+}
+
+
+/*ILUSTRAÇÂO*/
+
+.container_book1 {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template: 
+   "1fr 1fr "250px 
+  "1fr 1fr " 250px
+   "1fr 1fr  "250px
+   "1fr 1fr  "250px
+   "1fr 1fr  "250px
+   "1fr 1fr  "250px
+   "1fr 1fr  "250px
+   "1fr 1fr  "250px;
+   
+  grid-gap: 5px;
+
+}
+.container_ilus{
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template: 
+   "1fr "250px 
+  "1fr " 250px
+   "1fr   "250px
+   "1fr   "250px
+}
+.container_book1 .box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.container_book1 .box {
+  grid-row: span 2;
+  position: relative;
+  background-color: #ccc;
+}
+
+
+
+}
+
+
+
+/*Grandes Telas*/
+@media screen and (min-width: 1025px){
+    .logo{
+        width: 150px;
+    }
+    
+#header{
+    background-image: url('../imgs/textura-fundo.png');
+    height: 153px;
+    text-align: center;
+    width: 100%;
+    
+}
+#menu {
+    display: flex;
+justify-content: center; 
+
+}
+.fundo{
+    background-image: url('../imgs/barra.png');
+     padding: 10px;
+     height: 100px;
+ 
+}
+/* PORTIFOLIO*/
+.servicos{
+    margin-top: 40px;
+    margin-bottom: 80px;
+   }
+   
+   
+   .img-servico{
+     
+       margin-bottom: 20px;
+       margin-left: 30px;
+       width: 100%;
+       height: 100%;
+       border: 5px solid var(--cor02);
+}
+
+    .servicos{
+    margin-top: 150px;
+     
+   
+    }
+    .servicos ul{
+        display: flex;
+        justify-content: center;
+       
+    }
+    
+    .servicos ul li{
+        width: 100%;
+        margin-left: 40px;
+          
+    }
+/* sobre*/
+.bloco-texto{
+    width: 80%;
+}
+#about{
+    background-image: url(../imgs/textura-fundo.png);
+    padding: 40px;
+    margin-bottom: 80px;
+}
+.sobre-img{
+    width: 300px;
+    height: 300px;
+    border: 4px solid var(--cor04);
+
+}
+
+.sobre-organizacao{
+    display: flex;
+   
+}
+/* contato*/
+
+.link {
+    display: inline;
+    margin: 20px;
+}
+
+
+.contato{
+    margin-top: 100px;
+}
+.contato-organizer {
+    display: flex;
+}
+.form{
+padding: 10px;
+text-align: center;
+margin-bottom: 60px;
+
+}
+.paragrafo1{
+font-size: 1em;
+color: var(--cor05);
+font-family: var(--fontPadrao);
+font-weight: 500;
+}
+.paragrafo2{
+    width: 450px;
+}
+.form .area-texto{
+width: 70%;
+padding: 5px;
+margin-bottom: 15px;
+}
+.form label{
+display: block;
+text-align: left;
+
+}
+
+
+
+.s2{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.titulo-page{
+  margin-top: 150px;
+}
 .small_img_book {
   height: 100%;
   cursor: pointer;
@@ -491,589 +1091,8 @@ width: 70%;
   grid-column:span 2 ;
 }
 
-
-
-
-/* Menu - página books */
-
-
-.botton-book{
-  margin-left: 40px;
-  padding-top: 5px;
-  width: 200px;
-  height: 40px;
-  font-family:var(--fontDestaque);
-  font-size: 24px;
-  background-image: linear-gradient(to  right, #121212, #333333);
-  color: var(--cor04);
-  box-shadow:  2px 2px 2px rgba(0, 0, 0, 0.205);
-  border: 1px solid #333333;
-
-
-  text-align: center;
-}
-
-.botton-book:hover{
-  background: var(--cor03);
-  color: var(--cor01);
-  transition: all ease-in-out .2s;
-  border: 4px solid var(--cor03);
-}
-
-
-
-
-.escolhe-book{
-  display: flex;
-  justify-content: center;
-}
-
-
-
-
-/*mobile */
-@media only screen  and (max-width: 600px) {
- 
-.titulo{
-    font-size: 1.8em;
-    text-align: center;
-    margin-top: 40px;
-
-}
-.banner{
-    display: none;
-}
-#about{
-  display: none;
-}
-
-.servicos ul li{
-    margin-bottom: 20px;
-}
-#servico{
-  width: 70%;
-    margin: auto;
-    display: block;
-    
-}
-/* SOBRE */
-
-.paragrafo{
-    font-size: 1.2em;
-    margin: 0px;
-}
-
-.paragrafo-2{
-  font-size: 1.2em;
-  color: var(--cor05);
-  font-family: var(--fontPadrao);
-  font-weight: 500;
-  text-align: justify;
-  width: 100%;
-  margin: 0px;
-}
-
-#sobre{
-    display: none;
-}
-
-.subtitulo{
-display: none;
-}
-.paragrafo{
-  width: 60%;
-  margin-right: 10px;
-}
-#link{
-  margin: 0;
-  margin-right: 15px;
-  padding-left: 0;
-  width: 20px;
-}
-
-  #link{
-      display: inline;
-  }
-  .form{
-   display: none;
-    padding: 20px;
-    text-align: center;
-    margin-bottom: 60px;
-}
-#contat{
-  display: block;
-}
-
-.escolhe-book a{
-  font-size: 1.2em;
-}
-
-
-.sub-book{
-  font-size: 1.2em;
-  margin-bottom: 20px;
-}
-
-.titulo-book{
-  font-size: 2.2em;
-  margin: 40px 0;
-}
-
-.container_book {
-  width: 100%;
-  display: grid;
-  grid-auto-flow: dense;
-  grid-template: "1fr 1fr  "200px 
-  "1fr 1fr "200px 
-  "1fr 1fr " 250px 
-  "1fr 1fr "250px
-   "1fr 1fr "250px 
-   "1fr 1fr "250px 
-   "1fr 1fr "250px 
-   "1fr 1fr "250px 
-   "1fr 1fr "250px 
-   "1fr 1fr "250px 
-   "1fr 1fr "250px 
-   "1fr 1fr "250px 
-   "1fr 1fr "250px 
-   "1fr 1fr "250px 
-   "1fr 1fr "250px 
-   "1fr 1fr "250px 
-   "1fr 1fr "250px 
-   "1fr 1fr "250px 
-   "1fr 1fr "250px 
-   "1fr 1fr "250px 
-   "1fr 1fr "250px 
-   "1fr 1fr "250px   
-   "1fr 1fr "250px 
-   "1fr 1fr"250px;
-
-}
-.container_book .box {
-  grid-row: span 1;
-
-  position: relative;
- 
-}
-.small_img_book {
-  height: 100%;
-  cursor: pointer;
-  transition: all linear 0.4s;
- 
-}
-.container_layout{
-  width: 100%;
-  display: grid;
-  grid-auto-flow: dense;
-  grid-template: "1fr 1fr"250px 
-  "1fr 1fr"250px 
-  "1fr 1fr" 250px 
-  "1fr 1fr"250px
-   "1fr 1fr"250px 
-   "1fr 1fr"250px;
-
-}
-
-
-}
-
-
-/* Tablet e Laptop*/
-@media screen  and (max-width: 1024px){
-  #logo {
-        font-size: 1.5rem;
-        font-weight: bold;
-      }
-      .logo{
-          width: 60px;
-      }      
-      #header {
-        box-sizing: border-box;
-        height: 70px;
-        padding: 1rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background-image: linear-gradient(to  right, #121212, #333333);
-      }    
-      #menu {
-        display: flex;
-        list-style: none;
-        gap: 0.5rem;
-      }  
-      #menu a {
-        display: block;
-        padding: 0.5rem;
-      }  
-      #btn-mobile {
-        display: none;
-      }
-        #menu {
-          display: block;
-          position: absolute;
-          width: 100%;
-          top: 70px;
-          right: 0px;
-          background-image: linear-gradient(to  right, #121212, #333333);
-          transition: 0.6s;
-          z-index: 1000;
-          height: 0px;
-          visibility: hidden;
-          overflow-y: hidden;
-        }
-        .nav.active #menu {
-          height: calc(100vh - 70px);
-          visibility: visible;
-          overflow-y: auto;
-        }
-        #menu a {
-          padding: 1rem 0;
-          margin: 0 1rem;
-          color: var(--cor05);
-          font-family: var(--fontDestaque);
-          text-align: center;
-          font-size: 2em;
-    
-        
-        }
-        #menu a:hover{
-            background-color: var(--cor04);
-            color: var(--cor02);
-        }
-        #btn-mobile {
-          display: flex;
-          padding: 0.5rem 1rem;
-          font-size: 1rem;
-          border: none;
-          background: none;
-          cursor: pointer;
-          gap: 0.5rem;
-        }
-        #hamburger {
-          border-top: 2px solid;
-          width: 20px;
-          color: var(--cor05);
-        }
-        #hamburger::after,
-        #hamburger::before {
-          content: '';
-          display: block;
-          width: 20px;
-          height: 2px;
-          background: currentColor;
-          margin-top: 5px;
-          transition: 0.3s;
-          position: relative;
-        }
-        .nav.active #hamburger {
-          border-top-color: transparent;
-        }
-        .nav.active #hamburger::before {
-          transform: rotate(135deg);
-        }
-        .nav.active #hamburger::after {
-          transform: rotate(-135deg);
-          top: -7px;
-        }
-
-        /* sobre*/
-.bloco-texto{
-    width: 100%;
-}
-#about{
-    background-image: url(../imgs/textura-fundo.png);
-    background-size: cover;
-    padding: 60px;
-    margin-bottom: 80px;
-}
-.sobre-img{
-    width: 50%;
-    border: 4px solid var(--cor04);
-
-}
-
-.sobre-organizacao{
-    display: flex;
-   
-}
-
-/* fontes*/
-.paragrafo{
-    font-size: 1em;
-    text-align: justify;
-    margin-left: 20px;
-    line-height: 1.5em;
-}
-.titulo{
-    margin-top: 40px;
-    font-size: 3em;
-}
-
-.t{
-    margin-top: 150px;
-}
-.contato-organizer{
-    display: inline-block;
-}
-
-/*BANNER*/
-.banner{
-    margin-top: 0px;
-}
-
-/* portfolio*/
-.img-servico{
-width: 100%;
- height: 100%;
- border: 5px solid var(--cor02);
-}
-.servicos ul{
-    display: flex;
-    justify-content: center;
-   
-}
-.servicos ul li{
-    width: 100%;
- margin-left: 20px;      
-}
-.servicos{
-    margin-bottom: 60px;
-}
-
-
-/* CONTATO*/ 
-.link {
-    display: inline;
-    margin: 20px;
-}
-
-.contato-organizer {
-    display: flex;
-}
-.form{
-padding: 10px;
-text-align: center;
-margin-bottom: 60px;
-margin-left: 40px;
-
-}
-
-.paragrafo2{
-    width: 200px;
-}
-.form .area-texto{
-width: 70%;
-padding: 5px;
-margin-bottom: 15px;
-}
-.form label{
-display: block;
-text-align: left;
-
-}
-
-
-/* galeria-book*/
-  .card_img_ilustration{
-    width: 200px;
-    height: 300px;
-    overflow: hidden;
-    margin: 10px;
-    margin-bottom: 40px;
-  }
-  .card_img_il-2{
-    width: 70%;
-    overflow: hidden;
-    }
-    .container_book {
-      width: 90%;
-      display: grid;
-      grid-auto-flow: dense;
-      grid-template: "1fr 1fr "200px 
-      "1fr 1fr "200px "1fr 1fr "
-      200px "1fr 1fr "200px
-       "1fr 1fr "250px 
-       "1fr 1fr "250px 
-       "1fr 1fr "250px 
-       "1fr 1fr "250px 
-       "1fr 1fr "250px 
-       "1fr 1fr "250px 
-       "1fr 1fr "250px 
-      
-   
-       "1fr 1fr"250px;
-      grid-gap: 4px;
-
-  }
-
-  
-  .small_img_book {
-    height: 100%;
-    cursor: pointer;
-    transition: all linear 0.4s;
-   
-  }
-
-  .small_img_book:hover {
-    transform: scale(1.8);
-    z-index: 1;
-
-  }
-  .container_layout {
-    width: 100%;
-    display: grid;
-    grid-auto-flow: dense;
-    grid-template: "1fr 1fr  "250px 
-    "1fr 1fr "250px "1fr 1fr "
-    250px "1fr 1fr "250px
-     "1fr 1fr "250px 
-     "1fr 1fr "250px 
-     "1fr 1fr "250px 
-     "1fr 1fr "250px 
-     "1fr 1fr "250px 
-     "1fr 1fr "250px 
-     "1fr 1fr "250px 
-     "1fr 1fr "250px 
-     "1fr 1fr "250px 
-     "1fr 1fr "250px 
-     "1fr 1fr"250px;
-    grid-gap: 4px;
-
-}
-  .small_img_layout:hover{
-    transform: scale(1.3);
-  }
-
-}
-
-
-
-/*Grandes Telas*/
-@media screen and (min-width: 1025px){
-    .logo{
-        width: 150px;
-    }
-    
-#header{
-    background-image: url('../imgs/textura-fundo.png');
-    height: 153px;
-    text-align: center;
-    width: 100%;
-    
-}
-#menu {
-    display: flex;
-justify-content: center; 
-
-}
-.fundo{
-    background-image: url('../imgs/barra.png');
-     padding: 10px;
-     height: 100px;
- 
-}
-/* PORTIFOLIO*/
-.servicos{
-    margin-top: 40px;
-    margin-bottom: 80px;
-   }
-   
-   
-   .img-servico{
-     
-       margin-bottom: 20px;
-       margin-left: 30px;
-       width: 100%;
-       height: 100%;
-       border: 5px solid var(--cor02);
-}
-
-    .servicos{
-    margin-top: 150px;
-     
-   
-    }
-    .servicos ul{
-        display: flex;
-        justify-content: center;
-       
-    }
-    
-    .servicos ul li{
-        width: 100%;
-        margin-left: 40px;
-          
-    }
-/* sobre*/
-.bloco-texto{
-    width: 80%;
-}
-#about{
-    background-image: url(../imgs/textura-fundo.png);
-    padding: 40px;
-    margin-bottom: 80px;
-}
-.sobre-img{
-    width: 300px;
-    height: 300px;
-    border: 4px solid var(--cor04);
-
-}
-
-.sobre-organizacao{
-    display: flex;
-   
-}
-/* contato*/
-
-.link {
-    display: inline;
-    margin: 20px;
-}
-
-
-.contato{
-    margin-top: 100px;
-}
-.contato-organizer {
-    display: flex;
-}
-.form{
-padding: 10px;
-text-align: center;
-margin-bottom: 60px;
-
-}
-.paragrafo1{
-font-size: 1em;
-color: var(--cor05);
-font-family: var(--fontPadrao);
-font-weight: 500;
 }
-.paragrafo2{
-    width: 450px;
-}
-.form .area-texto{
-width: 70%;
-padding: 5px;
-margin-bottom: 15px;
-}
-.form label{
-display: block;
-text-align: left;
-
-}
 
-
-
-.s2{
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-.titulo-page{
-  margin-top: 150px;
-}
-}
 
 
 
